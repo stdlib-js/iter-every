@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterEvery
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Test whether all [iterated][mdn-iterator-protocol] values are truthy.
 
@@ -139,11 +139,11 @@ console.log( bool );
 
 ## See Also
 
--   [`@stdlib/iter/any`][@stdlib/iter/any]: test whether at least one iterated value is truthy.
--   [`@stdlib/iter/every-by`][@stdlib/iter/every-by]: test whether every iterated value passes a test implemented by a predicate function.
--   [`@stdlib/iter/for-each`][@stdlib/iter/for-each]: create an iterator which invokes a function for each iterated value before returning the iterated value.
--   [`@stdlib/iter/none`][@stdlib/iter/none]: test whether all iterated values are falsy.
--   [`@stdlib/iter/some`][@stdlib/iter/some]: test whether at least `n` iterated values are truthy.
+-   <span class="package-name">[`@stdlib/iter/any`][@stdlib/iter/any]</span><span class="delimiter">: </span><span class="description">test whether at least one iterated value is truthy.</span>
+-   <span class="package-name">[`@stdlib/iter/every-by`][@stdlib/iter/every-by]</span><span class="delimiter">: </span><span class="description">test whether every iterated value passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/for-each`][@stdlib/iter/for-each]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value before returning the iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/none`][@stdlib/iter/none]</span><span class="delimiter">: </span><span class="description">test whether all iterated values are falsy.</span>
+-   <span class="package-name">[`@stdlib/iter/some`][@stdlib/iter/some]</span><span class="delimiter">: </span><span class="description">test whether at least `n` iterated values are truthy.</span>
 
 </section>
 
@@ -194,8 +194,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-every/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-every?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-every.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-every/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
