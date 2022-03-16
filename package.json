@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-every",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Test whether all iterated values are truthy.",
   "license": "Apache-2.0",
   "author": {
