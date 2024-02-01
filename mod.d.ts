@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,28 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Test whether all iterated values are truthy.
+* Tests whether all iterated values are truthy.
 *
-* @module @stdlib/iter-every
+* @param iterator - input iterator
+* @returns boolean indicating whether all iterated values are truthy
 *
 * @example
 * var array2iterator = require( '@stdlib/array-to-iterator' );
-* var iterEvery = require( '@stdlib/iter-every' );
 *
 * var it = array2iterator( [ 1, 1, 1, 1, 0 ] );
 *
 * var bool = iterEvery( it );
 * // returns false
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterEvery( iterator: Iterator ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterEvery;
