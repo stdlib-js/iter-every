@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-every
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterEvery = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-every@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterEvery = require( 'path/to/vendor/umd/iter-every/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-every@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterEvery;
-})();
-</script>
+var iterEvery = require( '@stdlib/iter-every' );
 ```
 
 #### iterEvery( iterator )
@@ -121,15 +115,10 @@ var bool = iterEvery( array2iterator( [] ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-every@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterMap = require( '@stdlib/iter-map' );
+var iterEvery = require( '@stdlib/iter-every' );
 
 function threshold( r ) {
     return ( r <= 0.95 );
@@ -149,11 +138,6 @@ var bool = iterEvery( miter );
 // returns <boolean>
 
 console.log( bool );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -225,8 +209,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-every.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-every
 
-[test-image]: https://github.com/stdlib-js/iter-every/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/iter-every/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/iter-every/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/iter-every/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-every/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-every?branch=main
@@ -262,15 +246,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/any]: https://github.com/stdlib-js/iter-any/tree/umd
+[@stdlib/iter/any]: https://github.com/stdlib-js/iter-any
 
-[@stdlib/iter/every-by]: https://github.com/stdlib-js/iter-every-by/tree/umd
+[@stdlib/iter/every-by]: https://github.com/stdlib-js/iter-every-by
 
-[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each/tree/umd
+[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each
 
-[@stdlib/iter/none]: https://github.com/stdlib-js/iter-none/tree/umd
+[@stdlib/iter/none]: https://github.com/stdlib-js/iter-none
 
-[@stdlib/iter/some]: https://github.com/stdlib-js/iter-some/tree/umd
+[@stdlib/iter/some]: https://github.com/stdlib-js/iter-some
 
 <!-- </related-links> -->
 
